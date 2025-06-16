@@ -11,7 +11,6 @@ class Task:
         status = "✅ Выполнено" if self.completed else "❌ Не выполнено"
         return f"{self.description} (до {self.deadline}) — {status}"
 
-
 tasks = []  # список задач
 
 def add_task(description, deadline):
@@ -31,10 +30,10 @@ def complete_task(task_number):
     else:
         print("⚠️ Неверный номер задачи.")
 
-
 add_task("Купить молоко", "2025-06-10")
 add_task("Сделать домашнее задание", "2025-06-09")
 
 show_uncompleted_tasks()
 complete_task(1)
 show_uncompleted_tasks()
+
